@@ -1,0 +1,26 @@
+version: '3.7'
+services:
+  hellourld-db:
+    image: mongo:latest
+    ports:
+      - "27017:27017"
+#    healthcheck:
+#      test: echo 'db.runCommand("ping").ok' | mongo hellourld-db:27017/test --quiet
+#      interval: 10s
+#      timeout: 10s
+#      retries: 3
+#      start_period: 40s
+    volumes:
+      - ./db/:/data/db
+#  hellourld-api:
+#    build:
+#      context: ./
+#      dockerfile: Dockerfile
+#    ports:
+#      - "8081:8081"
+#    container_name: hellourld-api
+#    depends_on:
+#      hellourld-db:
+#        condition: service_started
+#    links:
+#      - hellourld-db
