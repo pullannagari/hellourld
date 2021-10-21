@@ -1,7 +1,7 @@
 # hellourld
 url shortener which takes in long url's and produces corresponding short url's
 
-##swagger or api docs
+## swagger or api docs
 http://localhost:8081/v2/api-docs
 
 ##setup/install and run
@@ -11,7 +11,7 @@ http://localhost:8081/v2/api-docs
 2. run the boot_db.sh shell script, wait till the db is up
 3. run the boot_app.sh shell script
 
-##technologies and architecture
+## technologies and architecture
 Used Mongo as the NoSql DB and Base62 encoding is used to generate the short urls
 
 
