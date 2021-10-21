@@ -4,7 +4,6 @@ url shortener which takes in long url's and produces corresponding short url's
 ## swagger or api docs
 http://localhost:8081/v2/api-docs
 
-##setup/install and run
 ### prerequisites 
     docker, Java 8, docker-compose 1.29, maven 3.6
 1. clone this repo
